@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../01_html/imagens/santahat.png" type="image/png">
+    <title>testes</title>
+  </head>
+
+  <body>
+
+    <h1>HTML</h1>
+
+    <h3>Parágrafo com texto pre formatado e com elementos/TAGs de formatação textual</h3>
+
+    <pre>
+<u>Este texto é sublinhado</u> e não tem identação (no código) pois está inserido no elemento/TAG <code>&lt;pre&gt;</code>
+que é apresentado
+de igual forma como no código. Aqui representado em <b>BOLD</b>, aqui em <i>itálico</i>, <del>rasurado</del>, <small>pequeno</small> 
+e <mark>marcado</mark>.
+É ainda possível escrever texto invertido ou seja com direção alterada <bdo dir="rtl">(right to left )</bdo> - (right to left)
+bem como expoente (X<sup>2</sup>=4) ou suscrito (H<sub>2</sub>O).
+Quandor for utilizado código devemos mencioná-lo através do elemento/TAG <code>&lt;code&gt;.</code>
+    </pre>
+    <!-- Esta é a forma de comentar. Apartir daqui utilizaremos parágrafos <p> -->
+
+    <br><hr><br>
+
+    <h3>Inserção de imagens [elemento img] com texto rolante [elemento marquee]</h3>
+
+    <img src="/01_html/imagens/bob.jpg" alt="spongebob">
+
+    <marquee behavior="scroll" direction="right">Texto com efeito " scroll "</marquee>
+    <marquee behavior="alternate" direction="right" scrollamount="12px" >Texto com efeito " alternate " e scroll 12px</marquee>
+    <marquee behavior="slide" direction="right">Texto com efeito " slide "</marquee>
+    <marquee behavior="alternate" direction="up" height="100px">
+      <marquee behavior="alternate" direction="right">
+        Texto com efeito "alternate " para cima
+      </marquee>
+    </marquee>
+
+      <marquee direction="down" width="200" height="150" behavior="alternate" style="border:solid" bgcolor="aquamarine">
+        <marquee behavior="alternate">
+          bordas e bgcolor
+        </marquee>
+      </marquee>  
+
+    <br><hr><br>
+
+    <h3>Texto com hiperligações e TAG &lt;meta&gt; para o "viewport"</h3>
+
+    <h5>Site para mobile</h5>
+
+    <p>
+      Neste exemplo, através do uso do "Go Live" do VsCode junto ao <a href="https://www.w3schools.com/css/css_rwd_viewport.asp" target="_blank">meta viewport</a>, podemos visualizar este site num navegador 
+      de dispositivo móvel.
+    </p>
+
+    <br><hr><br>
+
+    <h3>Listas ordenadas - Ordered lists &lt;ol&gt;</h3>
+
+    <ol type="a">
+      <li>macã</li>
+      <li>uva</li>
+      <li>banana</li>
+    </ol>
+
+    <ol type="1" start="10" reversed>
+      <li>macã</li>
+      <li>uva</li>
+      <li>banana</li>
+    </ol>
+
+    <h3> Listas não ordenadas - Unordered list &lt;ul&gt;</h3>
+
+    <ul>
+      <li>macã</li>
+      <li>uva</li>
+      <li>banana</li>
+    </ul>
+
+    <ul style="list-style-type: circle;">
+      <li>macã</li>
+      <li>uva</li>
+      <li>banana</li>
+    </ul>
+
+    <ul style="list-style-type: '👉 ';">
+      <li>uva</li>
+      <li>pera</li>
+      <li>morango</li>
+    </ul>
+
+    <br><hr><br>
+
+    <h3>Listas de definição - Definition list &lt;dl&gt;</h3>
+    <h5>Definition term &lt;dt&gt;</h5>
+    <h5>Definition details &lt;dt&gt;</h5>
+
+    <dl>
+      <dt>Caes</dt>
+      <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, 
+          officiis aut pariatur officia culpa nostrum incidunt, inventore itaque 
+          velit beatae quia nemo consequatur adipisci enim, eaque sit! Quos, 
+          reprehenderit itaque!
+      </dd>
+
+      <dt>Gatos</dt>
+      <dd>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, 
+          pariatur molestias praesentium, placeat facilis et qui perspiciatis esse 
+          eius, quaerat quibusdam quo laborum eligendi iure eveniet dolorem nobis 
+          natus neque.
+      </dd>
+
+      <dt>Tigres</dt>
+      <dd>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi vero 
+        obcaecati nisi facere dignissimos necessitatibus pariatur tenetur iure id, 
+        minus hic aperiam reiciendis accusantium, veniam non suscipit consequatur 
+        error facilis.
+      </dd>
+        
+    </dl>
+
+    <br><hr><br>
+
+    <h3>Atributo style ( e propriedade "border")</h3>
+
+    <p style="color: red;">
+      Texto com atributo style "color: red"
+    </p>
+
+    <p style="background-color: pink;">
+      Texto com atributo style "background-color: pink"
+    </p>
+
+    <p style="border: 5px solid blue;">
+      Texto com atributo style e propriedade "border: 5px solid blue".
+    </p>
+
+    <p style="border: 3px dotted gray;">
+      Texto com atributo style e propriedade "border: 3px dotted gray".
+    </p>
+
+    <p style="border: 3px dashed gray;">
+      Texto com atributo style e propriedade "border: 3px dashed gray".
+    </p>
+
+    <p style="border: 3px double red;">
+      Texto com atributo style e propriedade "border: 3px double red".
+    </p>
+
+    <p style="border: 10px inset red;">
+      Texto com atributo style e propriedade "border: 10px inset red".
+    </p>
+
+    <p style="border: 10px outset red;">
+      Texto com atributo style e propriedade "border: 10px outset red".
+    </p>
+
+    <p style="border: 10px groove red;">
+      Texto com atributo style e propriedade "border: 10px groove red".
+    </p>
+
+    <br><hr><br>
+
+    <h3>Tabelas &lt;table&gt;</h3>
+    <h5>table row &lt;tr&gt;</h5>
+    <h5>table header &lt;th&gt;</h5>
+    <h5>table data &lt;td&gt;</h5>
+
+    <table style="border: 3px double green;border-collapse: collapse;">
+
+      <tr>
+        <th style="border: 3px dotted grey;">Nome</th>
+        <th style="border: 3px dotted grey;">Idade</th>
+        <th style="border: 3px dotted grey;">Morada</th>
+      </tr>
+
+      <tr>
+        <td style="border: 3px dotted grey;">Maria João</td>
+        <td style="border: 3px dotted grey;">25</td>
+        <td style="border: 3px dotted grey;">Algarve</td>
+      </tr>
+
+      <tr>
+        <td style="border: 3px dotted grey;">Tony Carreira</td>
+        <td style="border: 3px dotted grey;">60</td>
+        <td style="border: 3px dotted grey;">Pampilhosa</td>
+      </tr>
+
+    </table>
+
+    <br><hr><br>
+
+    <h3>Tabelas com <code>&lt;caption&gt;</code></h3>
+
+    <table style="border: 2px solid green; border-collapse: collapse;">
+
+      <caption style="background-color: aquamarine; border: 3px solid green; font-size: 19px;">Identificação</caption>
+      
+      <tr>
+        <th style="border: 2px solid green;">Nome</th>
+        <th style="border: 2px solid green;">Idade</th>
+        <th style="border: 2px solid green;">Morada</th>
+      </tr>
+
+      <tr>
+        <td style="border: 2px solid green;">Maria</td>
+        <td style="border: 2px solid green;">8</td>
+        <td style="border: 2px solid green;">Maia</td>
+      </tr>
+
+      <tr>
+        <td style="border: 2px solid green;">Mariana</td>
+        <td style="border: 2px solid green;">3</td>
+        <td style="border: 2px solid green;">Maia</td>
+      </tr>
+
+    </table>
+
+    <br><hr><br>
+
+    <h3>Cores</h3>
+
+    <p style="background-color: yellow;">Atribuição direta da cor "yellow"</p>
+    <p style="background-color: rgb(0, 255, 0);">Através de rgb "rgb(0, 255, 0)" [red, GREEN, blue]</p>
+    <p style="background-color: #FF0000;">Através de hexadecimal "#FF0000" [RED, green, blue]</p>
+    <p style="background-color: hsl(240,100%,50%);color: white;">Através de hsl "hsl(240,100%,50%)" [HUE, saturation, lightness]</p>    
+
+    <br><hr><br>
+
+    <h3>Audio e Video</h3>
+
+    <audio src="/01_html/audio/mario.mp3" controls preload="metadata"></audio>
+
+    <br><br>
+ 
+    <video src="/01_html/videos/cube.mp4" controls preload="auto" style="width: 450px;">Erro no player</video>
+
+    <p>👉 Podemos programar início e fim do audio através da inserção no código de: ficheiro.ext#t=01:00:00,02:00:00 (neste caso inicia em 01:00:00 e termina em 02:00:00)</p>
+
+    <br><hr><br>
+
+    <h3>Style [text-indent + line height]</h3>
+
+    <p style="text-indent: 20px;">Este texto tem "text-indent" de 20px.</p>
+    <p style="text-indent: 40px; line-height: 20px;">Este texto tem "text-indent" de 40px e "line-height" de 20px.</p>
+    <p style="text-indent: 60px; line-height: 40px;">Este texto tem "text-indent" de 60px e "line-height" de 40px.</p>
+
+    <br><hr><br>
+
+    <h3>Style [border-radius]</h3>
+
+    <p style="border: 3px solid green; border-radius:20px; width: fit-content;">Este parágrafo tem "border-radius" de 10px.</p>
+    <p style="border: 3px solid green; border-radius:0px 20px; width: fit-content;">Este parágrafo tem "border-radius" de 0px 20px.</p>
+    <p style="border: 3px solid green; border-radius:20px 20px 0px 0px; width: fit-content;">
+      Este parágrafo tem "border-radius" de 20px 20px 0px 0px. (top-left top-right bottom-right bottom-left)
+    </p>
+    <p style="border: 3px solid green; border-radius:50%; width: 300px; height: 300px;">
+      Este parágrafo tem "border-radius" de 50% (width:300px height:300px, propriedade obrigatória para representar um círculo perfeito).
+    </p>
+
+    <br><hr><br>
+
+    <h3>Style [background-image]</h3>
+
+    <p style="color: white; width: 1200px; height: 600px; background-image: url('/01_html/imagens/lisboa.jpg'); background-repeat: no-repeat; 
+      background-size: contain; background-position: center; background-attachment: fixed;">
+      Background-image mencionada através da propriedade url (sempre dentro de aspas ou aspas duplas) <br>
+      background-repeat: no-repeat (podemos alterar para repetição horizontal "repeat-x" ou vertical "repeat-y") <br>
+      background-size: 500px 300px (podemos alterar para cover, ocupa o espaço total e contain, ajusta a imagem ao espaço) <br>
+      background-position: right (podemos alterar na posição horizontal e vertical em pixels ou left right center e top center bottom) <br>
+      background-attachment: fixed (podemos alterar para scroll, a imagem acompanha o conteúdo, fixed a imagem fica fixa em relação ao conteúdo).
+    </p>
+
+    <br><br><br><br><hr><br>
+
+    
+  </body>
+
+</html>
